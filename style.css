@@ -38,10 +38,10 @@ p {
   border: 1px solid black;
 }
 
-/* .disc {
+.disc {
   height: 100px;
   border: 1px solid black;
-} */
+}
 
 .disc:hover {
   cursor: pointer;
@@ -74,9 +74,9 @@ p {
 .disc {
   height: 100px;
   border: 1px solid black;
-  display: flex; /* Ensure proper alignment of disc content */
-  align-items: center; /* Center disc content vertically */
-  justify-content: center; /* Center disc content horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
