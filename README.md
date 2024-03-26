@@ -1,4 +1,4 @@
-#Tower of Hanoi
+######Tower of Hanoi
 The Tower of Hanoi is a classic mathematical puzzle game. The objective of the game is to move a stack of disks from one peg to another peg, following these simple rules:
 
 Only one disk can be moved at a time.
