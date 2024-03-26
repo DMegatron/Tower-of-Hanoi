@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Tower Of Hanoi</h1>
+    <h3>Rules of Play</h3>
+    <ul id="rules">
+        <li>Transfer all discs from the left tower to the right tower</li>
+        <li>Only one disc may be moved at a time</li>
+        <li>At no time may a larger disc sit atop a smaller disc</li>
+    </ul>
+    <p>Good Luck and Have Fun!</p>
+
+    <div id="main">
+        <div class="tower" id="tower1"></div>
+        <div class="tower" id="tower2"></div>
+        <div class="tower" id="tower3"></div>
+    </div>
+
+    <!-- Display moves counter -->
+    <p>Moves: <span id="moveCounter">0</span></p>
+
+    <!-- Auto solve button -->
+    <button id="autoSolveBtn">Auto Solve</button>
+
+    <!-- Discs input -->
+    <div>
+        <label for="numDiscsInput">Number of Discs:</label>
+        <input type="number" id="numDiscsInput" min="1" max="10">
+        <button id="applyBtn">Apply</button>
+    </div>
+
+    <!-- Display area for auto solve -->
+    <div id="autoSolveDisplay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
