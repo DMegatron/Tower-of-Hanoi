@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const pickUpOrDropDisc = function (evt) {
         const tower = evt.currentTarget;
-
+    
         if (mode === 'pickup') {
             const disc = tower.lastElementChild;
             if (disc) {
@@ -21,16 +21,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 mode = 'drop';
             }
         } else { 
-            if (tower.lastElementChild === null || parseInt(selected.dataset.width) < parseInt(tower.lastElementChild.dataset.width)) {
+            if (tower.lastElementChild === null || parseInt(selected.dataset.height) < parseInt(tower.lastElementChild.dataset.height)) {
                 tower.appendChild(selected);
                 mode = 'pickup';
                 updateMovesCounter();
                 winning();
-            } else if (parseInt(selected.dataset.width) > parseInt(tower.lastElementChild.dataset.width)) {
-                alert('Try again!');
+            } else if (parseInt(selected.dataset.height) > parseInt(tower.lastElementChild.dataset.height)) {
+                alert('Invalid Move!');
             }
         }
     }
+    
 
     function winning() {
         const tower3 = document.querySelector('#tower3');
