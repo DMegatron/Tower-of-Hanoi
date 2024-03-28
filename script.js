@@ -82,7 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const disc = document.createElement('div');
             disc.className = 'disc';
             disc.id = 'disc' + i;
-            disc.dataset.width = i;
+            disc.dataset.height = i;
+            disc.style.width = (i * 60) + 'px';
             const randomColor = getRandomColor();
             disc.style.backgroundColor = randomColor;
             disc.style.color = getContrastColor(randomColor);
