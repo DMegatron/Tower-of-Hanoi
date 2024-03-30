@@ -44,14 +44,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100% - 20px); /* Adjust for border width */
+  width: calc(100% - 20px);
 }
 
 .disc:hover {
   cursor: pointer;
 }
 
-/* Remove these individual disc width definitions */
 /*
 #disc1 {
   width: 45%;
